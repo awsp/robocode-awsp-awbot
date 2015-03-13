@@ -28,26 +28,30 @@ This develop guide is to help developers how to modify and improve awbot.
    * [#2.2_Verify_Package 2.2 Verify Package]
  * [#3.0_Development_Guidelines 3.0 Development Guidelines]
 
-= 1.0 Prerequisites =
+## 1.0 Prerequisites =
 
-Robocode requires [http://java.com/en/download JAVA 5.0] to run.
+Robocode requires [JAVA 5.0](http://java.com/en/download) to run.
 
 In order to build and verify the system you modify, it is recommended to use [http://ant.apache.org/ Ant 1.8]
 
 
-= 2.0 Installation =
+## 2.0 Installation
 
-== 2.1 Preparation  ==
+#### 2.1 Preparation
   * Check out Awbot from [http://code.google.com/p/robocode-asw-awbot/source/checkout]
   * To begin installation, switch to the directory where you downloaded awbot in command line and type the following command. This will allow ivy to download all necessary libraries you need.
-  {{{ % ant }}}
+  ```
+  $ ant
+  ```
 
 
-== 2.2 Verify Package ==
+#### 2.2 Verify Package
   * Once all necessary packages are downloaded, type the following command.
-  {{{% ant -f verify.build.xml }}}
+  ```
+  $ ant -f verify.build.xml
+  ```
 
-  If for some reasons, you get an error in this process, please contact [anthonyspwu@gmail.com](me).
+  If for some reasons, you get an error in this process, please contact [me](anthonyspwu@gmail.com).
 
 = 3.0 Development Guidelines =
   * Awbot is developed fully under eclipse followed by the standard coding format of JAVA. If you found that your version of eclipse is using different format, please apply the following format, [http://ics-software-engineering.googlecode.com/svn/trunk/configfiles/eclipse.format.xml Eclipse Format for Robocode]
